@@ -1,0 +1,119 @@
+{
+  "product_identity": {
+    "product_id": "",
+    "product_name": "",
+    "insurer_name": "",
+    "policy_type": "",
+    "description": ""
+  },
+
+  "eligibility": {
+    "entry_age": {
+      "adult_min": null,
+      "adult_max": null,
+      "child_min": null,
+      "child_max": null
+    },
+    "family_structure": {
+      "allowed_relations": [],
+      "max_family_size": null,
+      "children_age_limit": null
+    },
+    "medical_screening_required": null
+  },
+
+  "sum_insured": {
+    "options": [],
+    "age_based_restrictions": {},
+    "special_conditions": []
+  },
+
+  "premium": {
+    "premium_tables": {},
+    "discounts": {},
+    "installment_loading": {}
+  },
+
+  "cost_sharing": {
+    "co_payment": {},
+    "deductibles": [],
+    "room_rent_limits": {},
+    "sub_limits": {}
+  },
+
+  "waiting_periods": {
+    "general": null,
+    "pre_existing": null,
+    "specific_diseases": {},
+    "maternity": null,
+    "treatment_specific": {}
+  },
+
+  "coverage": {
+    "hospitalization": true,
+    "daycare": true,
+    "ambulance": {},
+    "air_ambulance_limit": null,
+    "organ_donor": {},
+    "maternity": {},
+    "newborn": {},
+    "domiciliary": {},
+    "home_care": {},
+    "modern_treatment": {},
+    "ayush": {}
+  },
+
+  "benefit_limits": {},
+  "benefit_conditions": {},
+
+  "advanced_features": {
+    "sum_restoration": {},
+    "cumulative_bonus": {},
+    "wellness_program": {},
+    "shared_accommodation": {},
+    "compassionate_travel": {},
+    "repatriation": {}
+  },
+
+  "exclusions": {
+    "permanent": [],
+    "temporary": [],
+    "standard": [],
+    "disease_specific": []
+  },
+
+  "policy_rules": {
+    "policy_terms": [],
+    "renewability": {},
+    "grace_period": {},
+    "portability": {},
+    "migration": {},
+    "cancellation": {},
+    "free_look_period": null,
+    "moratorium_period": null
+  },
+
+  "claim_process": {
+    "cashless": true,
+    "notification_rules": "",
+    "required_documents": []
+  },
+
+  "explanation_content": {
+    "key_highlights": [],
+    "feature_descriptions": [],
+    "marketing_points": []
+  },
+
+  "rag_content": {
+    "benefit_text_chunks": [],
+    "coverage_text_chunks": [],
+    "policy_wording_chunks": []
+  },
+
+  "metadata": {
+    "brochure_name": "",
+    "version": "",
+    "effective_date": ""
+  }
+}
