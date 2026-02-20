@@ -1,0 +1,9 @@
+PDF INGESTION PIPELINE
+
+Step 1: Load brochure PDF
+Step 2: Extract raw text
+Step 3: Extract tables
+Step 4: Identify sections
+Step 5: Map content to product schema
+Step 6: Fill product JSON template
+Step 7: Save structured product file
