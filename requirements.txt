@@ -1,0 +1,8 @@
+ipykernel
+pymupdf
+pandas
+numpy
+tabula-py
+camelot-py[cv]
+jupyter
+ipykernel
