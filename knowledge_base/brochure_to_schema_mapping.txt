@@ -1,0 +1,124 @@
+=================================================
+BROCHURE CONTENT → PRODUCT SCHEMA MAPPING (FINAL)
+=================================================
+
+
+1. PRODUCT IDENTITY
+-------------------
+Plan name / policy title → product_name
+Insurance company name → insurer_name
+Policy introduction text → description
+Policy type mention → policy_type
+
+
+2. ELIGIBILITY EXTRACTION
+-------------------------
+Adult age limits → entry_age_rules.adult_min_age / adult_max_age
+Child age limits → entry_age_rules.child_min_age / child_max_age
+Family definition → family_structure_rules.allowed_relations
+Maximum family size → family_structure_rules.max_family_size
+Child continuation rules → family_structure_rules.children_age_limit
+Medical screening rules → policy_specific_eligibility.medical_screening_required
+
+
+3. SUM INSURED EXTRACTION
+-------------------------
+Sum insured list → sum_insured_options
+Age based sum insured restriction → sum_insured_age_restrictions
+Conditional SI rules → sum_insured_specific_conditions
+
+
+4. PREMIUM TABLE EXTRACTION
+---------------------------
+Age vs premium tables → premium_tables.by_age_band
+Sum insured vs premium → premium_tables.by_sum_insured
+Zone based pricing → premium_tables.by_zone
+Individual vs floater premium → premium_tables.by_policy_type
+
+Discount tables → discount_rules
+Installment loading → installment_loading
+
+
+5. COST SHARING EXTRACTION
+--------------------------
+Co-payment rules → co_payment_rules
+Deductible options → deductible_options
+Room rent slab tables → room_rent_limits
+Coverage sub-limits → sub_limits_by_sum_insured
+
+
+6. WAITING PERIOD EXTRACTION
+----------------------------
+General waiting period → general_waiting_period
+PED waiting → pre_existing_disease_waiting
+Disease waiting tables → specific_disease_waiting
+Maternity waiting → maternity_waiting
+Treatment waiting → treatment_specific_waiting
+
+
+7. COVERAGE EXTRACTION
+----------------------
+Hospitalization coverage → hospitalization_coverage
+Daycare mention → daycare_coverage
+Ambulance benefit → ambulance_coverage
+Air ambulance limit → air_ambulance_limit
+Organ donor rules → organ_donor_coverage
+Maternity section → maternity_coverage
+Newborn section → newborn_coverage
+Home treatment → home_care_coverage
+Domiciliary section → domiciliary_coverage
+Modern treatment → modern_treatment_coverage
+AYUSH coverage → ayush_coverage
+
+Benefit amount tables → benefit_specific_limits
+Conditional coverage text → benefit_conditions
+
+
+8. ADVANCED FEATURES EXTRACTION
+-------------------------------
+Restoration rules → automatic_sum_restoration
+Bonus rules → cumulative_bonus_rules
+Wellness program → wellness_program_rules
+Shared room benefits → shared_accommodation_benefit
+Travel benefits → compassionate_travel
+Mortal remains → repatriation_cover
+
+
+9. EXCLUSION EXTRACTION
+-----------------------
+Standard exclusion section → standard_regulatory_exclusions
+Permanent exclusions → permanent_exclusions
+Disease exclusion list → disease_specific_exclusions
+
+
+10. POLICY ADMIN RULES EXTRACTION
+---------------------------------
+Policy term → policy_term_options
+Renewal section → renewability_rules
+Grace period → grace_period_rules
+Portability section → portability_rules
+Migration section → migration_rules
+Cancellation clause → cancellation_rules
+Free look → free_look_period
+Moratorium → moratorium_period
+
+
+11. CLAIM PROCESS EXTRACTION
+----------------------------
+Cashless mention → cashless_availability
+Claim notification rules → claim_notification_rules
+Required documents → required_documents
+
+
+12. SEMANTIC CONTENT FOR RAG
+----------------------------
+Benefit explanation paragraphs → benefit_text_chunks
+Coverage explanation paragraphs → coverage_text_chunks
+Full policy text → policy_wording_chunks
+
+
+13. METADATA EXTRACTION
+-----------------------
+Brochure version → version
+Policy identifier → source_metadata
+Publication date → effective_date

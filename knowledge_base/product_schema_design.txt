@@ -1,0 +1,149 @@
+=================================================
+ENTERPRISE UNIVERSAL INSURANCE PRODUCT SCHEMA
+=================================================
+
+1. PRODUCT IDENTITY
+-------------------
+product_id
+product_name
+insurer_name
+policy_type (individual / floater / both)
+description
+
+
+2. ELIGIBILITY RULES
+--------------------
+entry_age_rules:
+    adult_min_age
+    adult_max_age
+    child_min_age
+    child_max_age
+
+family_structure_rules:
+    allowed_relations
+    max_family_size
+    children_age_limit
+
+policy_specific_eligibility:
+    medical_screening_required
+    underwriting_conditions
+
+income_requirements
+geographical_restrictions
+
+
+3. SUM INSURED STRUCTURE
+------------------------
+sum_insured_options (list)
+sum_insured_age_restrictions
+sum_insured_specific_conditions
+
+
+4. PREMIUM STRUCTURE (TABULAR)
+------------------------------
+premium_tables:
+    by_age_band
+    by_sum_insured
+    by_policy_type
+    by_zone
+
+discount_rules:
+    floater_discount
+    long_term_discount
+    deductible_discount
+    wellness_discount
+
+installment_loading
+
+
+5. COST SHARING RULES
+---------------------
+co_payment_rules
+deductible_options
+room_rent_limits
+sub_limits_by_sum_insured
+
+
+6. WAITING PERIODS (MULTI LEVEL)
+--------------------------------
+general_waiting_period
+pre_existing_disease_waiting
+specific_disease_waiting
+maternity_waiting
+treatment_specific_waiting
+
+
+7. COVERAGE MODULES (STRUCTURED BENEFITS)
+-----------------------------------------
+hospitalization_coverage
+daycare_coverage
+ambulance_coverage
+air_ambulance_limit
+organ_donor_coverage
+maternity_coverage
+newborn_coverage
+domiciliary_coverage
+home_care_coverage
+modern_treatment_coverage
+ayush_coverage
+
+benefit_specific_limits (dictionary)
+benefit_conditions (dictionary)
+
+
+8. ADVANCED POLICY FEATURES
+---------------------------
+automatic_sum_restoration
+cumulative_bonus_rules
+wellness_program_rules
+shared_accommodation_benefit
+compassionate_travel
+repatriation_cover
+
+
+9. EXCLUSIONS (STRUCTURED)
+--------------------------
+permanent_exclusions
+temporary_exclusions
+standard_regulatory_exclusions
+disease_specific_exclusions
+
+
+10. POLICY ADMINISTRATION RULES
+-------------------------------
+policy_term_options
+renewability_rules
+grace_period_rules
+portability_rules
+migration_rules
+cancellation_rules
+free_look_period
+moratorium_period
+
+
+11. CLAIM PROCESS RULES
+-----------------------
+cashless_availability
+claim_notification_rules
+required_documents
+
+
+12. BENEFITS FOR EXPLANATION (LLM USE)
+--------------------------------------
+key_highlights
+feature_descriptions
+marketing_points
+
+
+13. RAW SEMANTIC KNOWLEDGE (RAG)
+--------------------------------
+benefit_text_chunks
+coverage_text_chunks
+policy_wording_chunks
+
+
+14. SOURCE METADATA
+-------------------
+brochure_name
+version
+effective_date
